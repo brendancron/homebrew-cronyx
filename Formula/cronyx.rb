@@ -6,10 +6,10 @@ class Cronyx < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/brendancron/CronyxLang/releases/download/v0.1.1/cronyx-v0.1.1-aarch64-apple-darwin.tar.gz"
-      sha256 "fdd4f8c14facb83a1a9b201007c6e3c877af9bbc5ee4cad9629d1f588ad8174e"
+      sha256 "e9ce9e65c4567d260927a7546e483c716869df1024e34cf7ec9b562bd163e7a5"
     else
       url "https://github.com/brendancron/CronyxLang/releases/download/v0.1.1/cronyx-v0.1.1-x86_64-apple-darwin.tar.gz"
-      sha256 "244f3cc8c8c4ab8a5af2d8a14a24be1527f1bce94698522e3da2d99f010cbebe"
+      sha256 "bda3cb89604d6cc87c5f500fe0d221ae37aeeaaebd22868e3103a55a1e869bfc"
     end
   end
 
