@@ -1,15 +1,15 @@
 class Cronyx < Formula
   desc "Cronyx programming language compiler/interpreter"
   homepage "https://github.com/brendancron/CronyxLang"
-  version "0.1.3"
+  version "0.1.4"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/brendancron/CronyxLang/releases/download/v0.1.3/cronyx-v0.1.3-aarch64-apple-darwin.tar.gz"
-      sha256 "b9e1e723f3da95fd4b66a310c4863c0cc6d43904e00a3d2907cd8bb4e3d3aa43"
+      url "https://github.com/brendancron/CronyxLang/releases/download/v0.1.4/cronyx-v0.1.4-aarch64-apple-darwin.tar.gz"
+      sha256 "43e0e37de4737e75f83bcdb7f5ea2fff0e52dc5a842b512e0fbb1f7e8b2f8cb1"
     else
-      url "https://github.com/brendancron/CronyxLang/releases/download/v0.1.3/cronyx-v0.1.3-x86_64-apple-darwin.tar.gz"
-      sha256 "3fa359a7dafcdbf033097f40be017cd171fd4847d14f7ebb6afe0e3f67c1caab"
+      url "https://github.com/brendancron/CronyxLang/releases/download/v0.1.4/cronyx-v0.1.4-x86_64-apple-darwin.tar.gz"
+      sha256 "a77e688ed3bad36601b7953e95881a413738644f8d311db1ceca67668136f66e"
     end
   end
 
