@@ -1,20 +1,20 @@
 class Cronyx < Formula
   desc "Cronyx toolchain: the cx package manager and the compiler it links"
   homepage "https://github.com/brendancron/CronyxLang"
-  version "0.1.0"
+  version "0.0.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/brendancron/CronyxLang/releases/download/v0.1.0/cronyx-v0.1.0-aarch64-apple-darwin.tar.gz"
+      url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.1/cronyx-v0.0.1-aarch64-apple-darwin.tar.gz"
       sha256 "REPLACE_WITH_THE_SHA_RELEASE_SH_PRINTS"
     else
-      url "https://github.com/brendancron/CronyxLang/releases/download/v0.1.0/cronyx-v0.1.0-x86_64-apple-darwin.tar.gz"
+      url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.1/cronyx-v0.0.1-x86_64-apple-darwin.tar.gz"
       sha256 "REPLACE_WITH_THE_SHA_RELEASE_SH_PRINTS"
     end
   end
 
   on_linux do
-    url "https://github.com/brendancron/CronyxLang/releases/download/v0.1.0/cronyx-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
+    url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.1/cronyx-v0.0.1-x86_64-unknown-linux-gnu.tar.gz"
     sha256 "REPLACE_WITH_THE_SHA_RELEASE_SH_PRINTS"
   end
 
@@ -38,7 +38,7 @@ class Cronyx < Formula
     (testpath/"cronyx.toml").write <<~TOML
       [package]
       name    = "smoke"
-      version = "0.1.0"
+      version = "0.0.1"
       cronyx  = "#{version}"
     TOML
     (testpath/"src").mkpath
