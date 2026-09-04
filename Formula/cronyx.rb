@@ -3,20 +3,13 @@ class Cronyx < Formula
   homepage "https://github.com/brendancron/CronyxLang"
   version "0.0.1"
 
-  on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.1/cronyx-v0.0.1-aarch64-apple-darwin.tar.gz"
-      sha256 "REPLACE_WITH_THE_SHA_RELEASE_SH_PRINTS"
-    else
-      url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.1/cronyx-v0.0.1-x86_64-apple-darwin.tar.gz"
-      sha256 "REPLACE_WITH_THE_SHA_RELEASE_SH_PRINTS"
-    end
-  end
+  # Built on an Intel Mac. Apple Silicon runs it under Rosetta 2 until there is
+  # a machine to build a native arm64 toolchain on; Linux has no archive at all
+  # yet, so the formula does not pretend to offer one.
+  depends_on :macos
 
-  on_linux do
-    url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.1/cronyx-v0.0.1-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "REPLACE_WITH_THE_SHA_RELEASE_SH_PRINTS"
-  end
+  url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.1/cronyx-v0.0.1-x86_64-apple-darwin.tar.gz"
+  sha256 "00a853f23df092f4ad419fd999d3365ee80249ebf3dac9d6d7676d4b9fbbb223"
 
   def install
     # One complete toolchain, not a launcher for one: `cx` links the compiler
