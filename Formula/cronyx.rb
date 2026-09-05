@@ -1,15 +1,15 @@
 class Cronyx < Formula
   desc "Cronyx toolchain: the cx package manager and the compiler it links"
   homepage "https://github.com/brendancron/CronyxLang"
-  version "0.0.3"
+  version "0.0.4"
 
   # Built on an Intel Mac. Apple Silicon runs it under Rosetta 2 until there is
   # a machine to build a native arm64 toolchain on; Linux has no archive at all
   # yet, so the formula does not pretend to offer one.
   depends_on :macos
 
-  url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.3/cronyx-v0.0.3-x86_64-apple-darwin.tar.gz"
-  sha256 "1ff0c099efd04ca13e6d234ab788acafc773982dddd4b26b9ccdffc250ce91b8"
+  url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.4/cronyx-v0.0.4-x86_64-apple-darwin.tar.gz"
+  sha256 "cd15ec0b6d4e6fb3e397c3c93e4a1f7c8e5cbc7cc67cccab47bfd539784bbabc"
 
   def install
     # One complete toolchain, not a launcher for one: `cx` links the compiler
