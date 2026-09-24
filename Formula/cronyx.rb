@@ -6,20 +6,36 @@ class Cronyx < Formula
   # architecture it is for and a release carries one per architecture. The
   # version is named per architecture too: an architecture a release does not
   # carry stays on the last one that did, rather than holding the other back or
-  # pointing at a file that is not there. Linux has an archive but no formula
-  # yet.
-  depends_on :macos
+  # pointing at a file that is not there.
+  #
+  # The Linux archives are linked statically against musl, so they do not care
+  # which distribution -- or which libc -- they land on.
+  on_macos do
+    on_arm do
+      version "0.0.12"
+      url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.12/cronyx-v0.0.12-aarch64-apple-darwin.tar.gz"
+      sha256 "7413d470df51c6f092ba233a029c245003a84156373589adeb8ba8d6963c5b70"
+    end
 
-  on_arm do
-    version "0.0.12"
-    url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.12/cronyx-v0.0.12-aarch64-apple-darwin.tar.gz"
-    sha256 "7413d470df51c6f092ba233a029c245003a84156373589adeb8ba8d6963c5b70"
+    on_intel do
+      version "0.0.12"
+      url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.12/cronyx-v0.0.12-x86_64-apple-darwin.tar.gz"
+      sha256 "50626112c5b71a3ecc3fb9bec935c2ca9421911e477c00eb77bea28ddd9de9da"
+    end
   end
 
-  on_intel do
-    version "0.0.12"
-    url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.12/cronyx-v0.0.12-x86_64-apple-darwin.tar.gz"
-    sha256 "50626112c5b71a3ecc3fb9bec935c2ca9421911e477c00eb77bea28ddd9de9da"
+  on_linux do
+    on_arm do
+      version "0.0.12"
+      url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.12/cronyx-v0.0.12-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "83ac29576c99abd101775d28b91e637a27c44b6bee7a7a77d5f57597f0f7cf6e"
+    end
+
+    on_intel do
+      version "0.0.12"
+      url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.12/cronyx-v0.0.12-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "27d8d258e223da1e94f398584697c96e9693b3ba49d088b7ae1d993358ef7f8a"
+    end
   end
 
   def install
