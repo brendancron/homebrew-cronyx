@@ -11,9 +11,9 @@ class Cronyx < Formula
   depends_on :macos
 
   on_arm do
-    version "0.0.10"
-    url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.10/cronyx-v0.0.10-aarch64-apple-darwin.tar.gz"
-    sha256 "204cdb17d3efddadbe9e763199c2858e6412eb96b2888551c41dcb0c3d562d57"
+    version "0.0.11"
+    url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.11/cronyx-v0.0.11-aarch64-apple-darwin.tar.gz"
+    sha256 "3df875776da0db2df411cee759298d575594cd94050fed3751a796e0c8f62635"
   end
 
   on_intel do
