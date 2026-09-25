@@ -14,7 +14,7 @@ class Cronyx < Formula
     on_arm do
       version "0.0.14"
       url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.14/cronyx-v0.0.14-aarch64-apple-darwin.tar.gz"
-      sha256 "4e04c92b9b180604879648968c1650f1d2b59a5437d13ed43de994d4070efb92"
+      sha256 "a4536ae23d29179a645aa035205ac9d932ab891f79c56ae297c7bee9d5a9f027"
     end
 
     on_intel do
@@ -28,13 +28,13 @@ class Cronyx < Formula
     on_arm do
       version "0.0.14"
       url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.14/cronyx-v0.0.14-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "1a25784ddc5961ffa140fc2ad48223d6b4a6623fb50694f579eb9dab5d4062aa"
+      sha256 "bad81d75e23a29184bab665fdaf4a816026cf30c60089804fa815755d529e569"
     end
 
     on_intel do
       version "0.0.14"
       url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.14/cronyx-v0.0.14-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "bc90e1d0c8df706f0d3344a36153f45c5b0a95e752467edf4eac27ab4fcefc8b"
+      sha256 "8c095b26dd314832fca9467b158bd615f6e5bf68cb7ee18a65ac73739de06db0"
     end
   end
 
