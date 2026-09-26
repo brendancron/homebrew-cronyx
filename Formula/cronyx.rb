@@ -12,9 +12,9 @@ class Cronyx < Formula
   # which distribution -- or which libc -- they land on.
   on_macos do
     on_arm do
-      version "0.0.14"
-      url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.14/cronyx-v0.0.14-aarch64-apple-darwin.tar.gz"
-      sha256 "a4536ae23d29179a645aa035205ac9d932ab891f79c56ae297c7bee9d5a9f027"
+      version "0.0.15"
+      url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.15/cronyx-v0.0.15-aarch64-apple-darwin.tar.gz"
+      sha256 "b196e12431d7b7e61a0d980b724ba8b97baebbd289066aa959f7d9b900382300"
     end
 
     on_intel do
@@ -26,15 +26,15 @@ class Cronyx < Formula
 
   on_linux do
     on_arm do
-      version "0.0.14"
-      url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.14/cronyx-v0.0.14-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "bad81d75e23a29184bab665fdaf4a816026cf30c60089804fa815755d529e569"
+      version "0.0.15"
+      url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.15/cronyx-v0.0.15-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "dcc52fdcaa83caa3f7327c4c22e402f94464462a7b02420041fba1f25e347ec6"
     end
 
     on_intel do
-      version "0.0.14"
-      url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.14/cronyx-v0.0.14-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "8c095b26dd314832fca9467b158bd615f6e5bf68cb7ee18a65ac73739de06db0"
+      version "0.0.15"
+      url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.15/cronyx-v0.0.15-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "f694fc304d224a435f4106d19285e37e949bfdd401155d6cfaaf763e6d69bc98"
     end
   end
 
