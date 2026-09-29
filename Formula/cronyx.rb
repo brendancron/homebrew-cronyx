@@ -18,9 +18,9 @@ class Cronyx < Formula
     end
 
     on_intel do
-      version "0.0.17"
-      url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.17/cronyx-v0.0.17-x86_64-apple-darwin.tar.gz"
-      sha256 "e9b50f3273d60ad872de3a4112acd7098e62d3701cb660b9853467ecf850590b"
+      version "0.0.18"
+      url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.18/cronyx-v0.0.18-x86_64-apple-darwin.tar.gz"
+      sha256 "5b99b6073cc8359a15b6125c92595a1948d737a53792cd741e33345f26e40e7d"
     end
   end
 
