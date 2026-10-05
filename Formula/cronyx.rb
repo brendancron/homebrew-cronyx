@@ -32,9 +32,9 @@ class Cronyx < Formula
     end
 
     on_intel do
-      version "0.0.28"
-      url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.28/cronyx-v0.0.28-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "ac05ed8335c1edd057516a77c2dc95934516fa2b3f87ec94e4f71503bc587289"
+      version "0.0.29"
+      url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.29/cronyx-v0.0.29-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "559a835cf172bf38260709f79de0f4e14ed582091ee7bd8929b8d0ab4b6c8163"
     end
   end
 
