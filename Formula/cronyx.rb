@@ -26,9 +26,9 @@ class Cronyx < Formula
 
   on_linux do
     on_arm do
-      version "0.0.25"
-      url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.25/cronyx-v0.0.25-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "1c801353e108334d61a089256cd5307b472d8177db93e9984904c04ba7e64b40"
+      version "0.0.26"
+      url "https://github.com/brendancron/CronyxLang/releases/download/v0.0.26/cronyx-v0.0.26-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "d4229c345e4b7b71af3c7062f939c21b306e210c9e4f24e9313050c9fa90b976"
     end
 
     on_intel do
